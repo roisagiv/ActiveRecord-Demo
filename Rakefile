@@ -3,4 +3,11 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+Rake::TaskManager.class_eval do
+  def remove_task(task_name)
+    @tasks.delete(task_name.to_s)
+  end
+end
+
 Rails.application.load_tasks
+
