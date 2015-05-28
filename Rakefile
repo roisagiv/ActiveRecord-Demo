@@ -10,4 +10,3 @@ Rake::TaskManager.class_eval do
 end
 
 Rails.application.load_tasks
-

@@ -1,3 +1,7 @@
+# Custom rules
+*.dump
+tags
+
 # Created by https://www.gitignore.io
 
 ### Rails ###
@@ -139,4 +143,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
