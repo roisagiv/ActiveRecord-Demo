@@ -43,4 +43,10 @@ Rails.application.configure do
   # Logging
   config.logger = Logger.new(STDOUT)
   ActiveRecord::Base.logger = Logger.new(STDOUT)
+
+  config.after_initialize do
+    Bullet.enable = true
+    Bullet.bullet_logger = true
+    Bullet.raise = true
+  end
 end

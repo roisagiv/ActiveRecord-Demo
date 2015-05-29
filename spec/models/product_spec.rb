@@ -22,10 +22,10 @@ RSpec.describe Product, type: :model do
   end
 
   it '#take products lazy loads category' do
-    Rails.logger.debug '===**** LAZY ****==='
-    Product.take(100).each do |product|
-      expect(product.category).not_to be_nil
-    end
+    # Rails.logger.debug '===**** LAZY ****==='
+    # Product.take(100).each do |product|
+      # expect(product.category).not_to be_nil
+    # end
 
     # include will eager load the category attribute
     Rails.logger.debug '===**** EAGER ****==='
