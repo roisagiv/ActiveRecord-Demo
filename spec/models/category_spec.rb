@@ -21,4 +21,9 @@ RSpec.describe Category, type: :model do
       expect(category.products).to have_at_least(1).items
     end
   end
+
+  it "#most_common_category should return Foreign" do
+    category = Category.most_common_category
+    expect(category.categoryname).to eq 'Foreign'
+  end
 end

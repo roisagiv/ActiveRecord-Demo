@@ -33,4 +33,9 @@ RSpec.describe Product, type: :model do
       expect(product.category).not_to be_nil
     end
   end
+
+  it "#most_expensive_products should return 486 products" do
+    products = Product.most_expensive_products
+    expect(products).to have(486).items
+  end
 end
